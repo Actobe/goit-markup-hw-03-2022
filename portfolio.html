@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css"
 </head>
 <body>
     <header class="header">
+        <div class="container header-container">
         <nav class="navigation">
         <a class="logo link" href="">
             Web<span class="logo-web"</span>Studio<span class="logo-studio"</span>
@@ -28,9 +30,11 @@
         <li class="contact-list-mail link"><a class="contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="contact-list-number link"><a class="contact-number link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+    </div>
     </header>
 <main>
-    <section>
+    <section class="main-portfolio">
+        <div class="container menu-container">
     <ul class="portfolio list">
     <li class="portfolio-list">
     <button class="portfolio-list link" type="button">Все</button>
@@ -47,9 +51,11 @@
     <button class="portfolio-list link" type="button">Маркетинг</button>
     </li>
     </ul>
-    
-    <ul class="inspiration list">
-    <li>
+</div>
+<section>
+    <div class="container">
+<ul class="inspiration list">
+    <li class="inspiration-list">
         <img
         src="./images/people.jpg"
         alt="all people"
@@ -57,9 +63,9 @@
         height="294"
         />
         <h3 class="nomenclature">Технокряк</h3>
-        <p class="nomenclature descr">Веб-сайт</p>
+        <p class="nomenclature-descr">Веб-сайт</p>
     </li>
-    <li>
+    <li class="inspiration-list">
         <img
         src="./images/poster.jpg"
         alt="posters"
@@ -67,9 +73,9 @@
         height="294"
         />
         <h3 class="nomenclature">Постер New Orlean vs Golden Star</h3>
-        <p class="nomenclature descr">Дизайн</p>
+        <p class="nomenclature-descr">Дизайн</p>
     </li>
-    <li>
+    <li class="inspiration-list">
         <img
         src="./images/app.jpg"
         alt="apps"
@@ -77,9 +83,9 @@
         height="294"
         />
         <h3 class="nomenclature">Ресторан Seafood</h3>
-        <p class="nomenclature descr">Приложение</p>
+        <p class="nomenclature-descr">Приложение</p>
     </li>
-    <li>
+    <li class="inspiration-list">
         <img
         src="./images/project.jpg"
         alt="projects"
@@ -87,9 +93,19 @@
         height="294"
         />
         <h3 class="nomenclature">Проект Prime</h3>
-        <p class="nomenclature descr">Маркетинг</p>
+        <p class="nomenclature-descr">Маркетинг</p>
     </li>
-    <li>
+    <li class="inspiration-list">
+        <img
+        src="./images/box.jpg"
+        alt="projects"
+        width="370"
+        height="294"
+        />
+        <h3 class="nomenclature">Проект Boxes</h3>
+        <p class="nomenclature-descr">Приложение</p>
+    </li>
+    <li class="inspiration-list">
         <img
         src="./images/website.jpg"
         alt="web"
@@ -97,9 +113,9 @@
         height="294"
         />
         <h3 class="nomenclature">Inspiration has no Borders</h3>
-        <p class="nomenclature descr">Веб-сайт</p>
+        <p class="nomenclature-descr">Веб-сайт</p>
     </li>
-    <li>
+    <li class="inspiration-list">
         <img
         src="./images/design.jpg"
         alt="design limited"
@@ -107,9 +123,9 @@
         height="294"
         />
         <h3 class="nomenclature">Издание Limited Edition</h3>
-        <p class="nomenclature descr">Дизайн</p>
+        <p class="nomenclature-descr">Дизайн</p>
     </li>
-    <li>
+    <li class="inspiration-list">
         <img
         src="./images/marketing.jpg"
         alt="marketing style"
@@ -117,9 +133,9 @@
         height="294"
         />
         <h3 class="nomenclature">Проект LAB</h3>
-        <p class="nomenclature descr">Маркетинг</p>
+        <p class="nomenclature-descr">Маркетинг</p>
     </li>
-    <li>
+    <li class="inspiration-list">
         <img
         src="./images/business app.jpg"
         alt="business apps"
@@ -127,18 +143,20 @@
         height="294"
         />
         <h3 class="nomenclature">Growing Business</h3>
-        <p class="nomenclature descr">Приложение</p>
+        <p class="nomenclature-descr">Приложение</p>
     </li>
     </ul>
+</div>
     </section>
 </main>
     <footer class="footer">
+        <div class="container footer-container">
         <a class="logo link" href="">
             Web<span class="logo-w"</span>Studio<span class="logo-studio"</span>
             </a>
         
             <address class="address">
-            <ul>
+            <ul class="address-container">
              <li class="address list">
                 <a class="address list link"
                 href=>г. Киев, пр-т Леси Украинки, 26</a>
@@ -151,6 +169,7 @@
                 </li>
                 </ul>
                 </address>
+            </div>
     </footer>
 </body>
 </html>

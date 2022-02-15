@@ -126,10 +126,25 @@ color:#2196F3;
 .hero {
 background: #2F303A;
 }
-.hero {
-text-align: center;
+.hero-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 106px;
+   padding-bottom: 106px;
+   text-align: center;
+   width: 1600px;
+   height: 600px;
+   
 }
 
+}
+.main-title {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
 .modal-btn {
     min-width: 160px;
     border-radius: 4px;
@@ -195,19 +210,26 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: #757575;
 }
+.all-container {
+    display: flex;
+    align-items: center;
+}
 .container-description {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    
 }
-.container-description {
-    flex-basis:calc((100%-120px)/4));
-    margin-top:30px;
-    marg
+.main-description:not(last-child) {
+margin-right: 10px;
+margin-bottom: 10px;
 }
-.main-description {
-    margin-right: 30px;
+.description:not(last-child) {
+    margin-right: 30px;   
 }
-
+.descr {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 .activity {
     margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
@@ -278,6 +300,20 @@ color: #757575;
 .footer {
 background: #2F303A;
 }
+.footer {
+    padding-top: 60px ;
+    padding-bottom: 60px;
+    }
+
+.address-container {
+    margin-top: 20px;
+    
+}
+   .address {
+       margin-bottom: 10px;
+   }
+
+
 .logo {
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -341,6 +377,7 @@ color: #2196F3;
 
 //second page//
 
+
 .button {
 cursor:pointer;
 }
@@ -362,6 +399,30 @@ border-radius: 4px;
 color: #FFFFFF;
 background-color: #2196F3
 }
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    padding-left: 324px;
+    
+}
+.portfolio {
+    display: flex;
+    align-items: center;
+    ju
+}
+.portfolio-list {
+display: flex;
+align-items: center;
+}
+.portfolio-list:not(:last-child) {
+    margin-right: 30px;
+}
+.button {
+    display: flex;
+    align-items: center;
+}
+
 .nomenclature {
 font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -372,7 +433,7 @@ line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
 }
-.nomenclature descr {
+.nomenclature-descr {
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -381,4 +442,24 @@ line-height: 1.88;
 /* identical to box height, or 187% */
 letter-spacing: 0.03em;
 color: #757575;
+}
+
+.inspiration {
+    display: flex;
+    flex-wrap: wrap;
+}
+.inspiration-list:not(:nth-child(3n)) {
+margin-right: 30px;
+}
+.inspiration {
+    flex-basis: calc((100%-120px)/3);
+    margin-top: 56px;
+    margin-bottom: 114px;
+}
+.nomenclature {
+    margin-bottom: 4px;
+    margin-top: 20px;
+}
+.inspiration-list {
+    margin-bottom: 50px;
 }
