@@ -9,6 +9,8 @@ ul,ol {
 }
 img {
     display: block;
+    max-width:100%;
+    height:auto;
 }
 address {
     font-style: normal;
@@ -57,6 +59,7 @@ color: #212121;
 .header {
 padding-top: 24px ;
 padding-bottom: 24px;
+border: 1px solid #ECECEC;
 }
 .header-container {
 display: flex;
@@ -125,22 +128,14 @@ color:#2196F3;
 
 .hero {
 background: #2F303A;
-}
-.hero-content {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding-top: 106px;
-   padding-bottom: 106px;
+
+   padding-top: 200px;
+   padding-bottom: 200px;
    text-align: center;
-   width: 1600px;
-   height: 600px;
-   text-align: center;
-   
+   max-width:1600px
 }
 
-}
+
 .main-title {
     align-items: center;
     text-align: center;
@@ -170,6 +165,7 @@ letter-spacing: 0.06em;
 cursor:pointer;
 background-color:#2196F3;
 color: #FFFFFF;
+margin: 0 auto;
 }
 
 .modal-btn:focus {
@@ -220,16 +216,18 @@ color: #757575;
     align-items: center;
     
 }
-.main-description:not(last-child) {
-margin-right: 10px;
+.main-description {
 margin-bottom: 10px;
 }
-.description:not(last-child) {
-    margin-right: 30px;   
-}
+
 .descr {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+       
+}
+.descr:not(:last-child) {
+margin-right: 30px;
+
 }
 .activity {
     margin-bottom: 50px;
@@ -241,6 +239,9 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+}
+.activity-section {
+    padding-bottom: 94px;
 }
 .pic {
     display: flex;
@@ -254,6 +255,7 @@ color: #212121;
 }
 .employees-section {
     background-color:#F5F4FA;
+    
 }
 
 .employees-list:not(:nth-child(4n)) {
@@ -262,7 +264,6 @@ color: #212121;
 }
 .employees {
 flex-basis:calc((100%-120px)/4));
-    margin-top:50px;
     
 }
 
@@ -273,7 +274,7 @@ flex-basis:calc((100%-120px)/4));
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 94px;
 }
 .name {
 font-family: 'Roboto', sans-serif;
@@ -306,13 +307,8 @@ background: #2F303A;
     padding-bottom: 60px;
     }
 
-.address-container {
-    margin-top: 20px;
-    
-}
-   .address {
-       margin-bottom: 10px;
-   }
+
+   
 
 
 .logo {
@@ -324,7 +320,6 @@ background: #2F303A;
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #2196F3;
-    
     }
     .logo-w {
         font-family: Raleway, sans-serif;
@@ -335,6 +330,9 @@ background: #2F303A;
         /* identical to box height */
         letter-spacing: 0.03em;
         color: #FFFFFF;
+    }
+    
+    
     }
 .address {
 font-family: 'Roboto', sans-serif;
@@ -382,7 +380,7 @@ color: #2196F3;
 .button {
 cursor:pointer;
 }
-.portfolio-list {
+.portfolio-list-button {
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -395,33 +393,43 @@ cursor:pointer;
 
 border-radius: 4px;
 }
-.portfolio-list:hover
+.portfolio-list:hover,
 .portfolio-list:focus {
 color: #FFFFFF;
 background-color: #2196F3
 }
+.portfolio-list-button:hover,
+.portfolio-list-button:focus {
+    color: #FFFFFF;
+background-color: #2196F3
+}
 
+.main-portfolio {
+   padding-top: 100px;
+   padding-bottom: 56px;
+}
 .menu-container {
     display: flex;
     align-items: center;
-    padding-left: 324px;
+    justify-content: center;
     
 }
 .portfolio {
     display: flex;
     align-items: center;
-    ju
+    margin-bottom: 56px;
 }
 .portfolio-list {
 display: flex;
 align-items: center;
 }
 .portfolio-list:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 52px;
 }
-.button {
+.portfolio-list-button {
     display: flex;
     align-items: center;
+    padding: 6px 22px;
 }
 
 .nomenclature {
@@ -454,13 +462,13 @@ margin-right: 30px;
 }
 .inspiration {
     flex-basis: calc((100%-120px)/3);
-    margin-top: 56px;
+    
     margin-bottom: 114px;
 }
 .nomenclature {
     margin-bottom: 4px;
     margin-top: 20px;
 }
-.inspiration-list {
+.inspiration-list:not(:nth-child(7,8,9)) {
     margin-bottom: 50px;
 }
