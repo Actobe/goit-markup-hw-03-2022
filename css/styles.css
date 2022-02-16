@@ -9,7 +9,7 @@ ul,ol {
 }
 img {
     display: block;
-    max-width:100%;
+    width:100%;
     height:auto;
 }
 address {
@@ -132,7 +132,7 @@ background: #2F303A;
    padding-top: 200px;
    padding-bottom: 200px;
    text-align: center;
-   max-width:1600px
+   
 }
 
 
@@ -255,16 +255,19 @@ color: #212121;
 }
 .employees-section {
     background-color:#F5F4FA;
+    padding-top: 94px;
+    display: flex;
     
 }
 
-.employees-list:not(:nth-child(4n)) {
+.employees-list { 
     margin-right: 30px;
-    
+
 }
 .employees {
-flex-basis:calc((100%-120px)/4));
-    
+    display: flex;
+    flex-basis:calc((100%-120px)/4));
+  
 }
 
 .employees-content-wrapper {
@@ -344,6 +347,8 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: #FFFFFF;
 }
+
+}
 .mail {
 font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -353,6 +358,9 @@ line-height: 1.71;
 /* or 171% */
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+display: block;
+margin-bottom: 10px;
+margin-top: 10px;
 }
 .phone {
 font-family: 'Roboto', sans-serif;
@@ -366,14 +374,20 @@ color: rgba(255, 255, 255, 0.6);
 }
 .phone:focus {
 color: #2196F3;
+
 }
-.mail:hover {
+.mail:hover, 
+.mail:focus {
 color: #2196F3;
+
 }
 .phone:hover {
 color: #2196F3;
 }
-
+.address:hover, 
+.address:focus {
+color: #2196F3;
+}
 //second page//
 
 
@@ -471,4 +485,8 @@ margin-right: 30px;
 }
 .inspiration-list:not(:nth-child(7,8,9)) {
     margin-bottom: 50px;
+}
+.logo {
+    display: block;
+    margin-bottom: 20px;
 }
