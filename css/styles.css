@@ -250,7 +250,7 @@ color: #212121;
 }
 .employees {
     display: flex;
-    flex-wrap: wrap;
+    
     
 }
 .employees-section {
