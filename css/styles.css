@@ -310,10 +310,6 @@ background: #2F303A;
     padding-bottom: 60px;
     }
 
-
-   
-
-
 .logo {
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -335,8 +331,6 @@ background: #2F303A;
         color: #FFFFFF;
     }
     
-    
-    }
 .address {
 font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -388,6 +382,8 @@ color: #2196F3;
 .address:focus {
 color: #2196F3;
 }
+
+
 //second page//
 
 
