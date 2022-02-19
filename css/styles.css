@@ -494,8 +494,10 @@ margin-right: 30px;
 .inspiration-list {
     margin-bottom: 30px;
     background: #FFFFFF;
-border: 1px solid #EEEEEE;
+
 box-sizing: border-box;
+border-top: none;
+border-bottom:1px solid #EEEEEE;
 }
 
 .footer-logo {
