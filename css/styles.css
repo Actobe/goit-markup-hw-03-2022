@@ -24,7 +24,7 @@ address {
     text-decoration:none
 }
 .section {
-    padding-top: 186px;
+    
     padding-bottom: 202px;
 }
 .container {
@@ -220,7 +220,7 @@ color: #757575;
 margin-bottom: 10px;
 }
 
-.descr {
+.main-descr {
     padding-top: 94px;
     padding-bottom: 94px;
        
@@ -248,14 +248,11 @@ color: #212121;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.employees {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
+
 .employees-section {
     background-color:#F5F4FA;
     padding-top: 94px;
+    padding-bottom: 94px;
     display: flex;
     
 }
@@ -277,7 +274,7 @@ color: #212121;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
-    padding-bottom: 94px;
+    padding-bottom: 30px;
 }
 .name {
 font-family: 'Roboto', sans-serif;
@@ -341,17 +338,19 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: #FFFFFF;
 }
-
-}
 .mail {
-font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
-line-height: 1.71;
+line-height: 24px;
 /* or 171% */
+
 letter-spacing: 0.03em;
+
 color: rgba(255, 255, 255, 0.6);
+}
+.mail {
 display: block;
 margin-bottom: 10px;
 margin-top: 10px;
@@ -382,7 +381,9 @@ color: #2196F3;
 .address:focus {
 color: #2196F3;
 }
-
+.address:not(:last-child) {
+    margin-bottom:10px;
+}
 
 //second page//
 
@@ -402,6 +403,9 @@ letter-spacing: 0.03em;
 cursor:pointer;
 
 border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 6px 22px;
 }
 .portfolio-list:hover,
 .portfolio-list:focus {
@@ -415,8 +419,8 @@ background-color: #2196F3
 }
 
 .main-portfolio {
-   padding-top: 100px;
-   padding-bottom: 56px;
+   padding-top: 94px;
+   padding-bottom: 50px;
 }
 .menu-container {
     display: flex;
@@ -434,13 +438,9 @@ display: flex;
 align-items: center;
 }
 .portfolio-list:not(:last-child) {
-    margin-right: 52px;
+    margin-right: 8px;
 }
-.portfolio-list-button {
-    display: flex;
-    align-items: center;
-    padding: 6px 22px;
-}
+
 
 .nomenclature {
 font-family: 'Roboto', sans-serif;
@@ -470,19 +470,38 @@ color: #757575;
 .inspiration-list:not(:nth-child(3n)) {
 margin-right: 30px;
 }
+.main-inspiration {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 .inspiration {
     flex-basis: calc((100%-120px)/3);
-    
-    margin-bottom: 114px;
+    background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;  
 }
 .nomenclature {
     margin-bottom: 4px;
     margin-top: 20px;
 }
-.inspiration-list:not(:nth-child(7,8,9)) {
-    margin-bottom: 50px;
+.inspiration-list {
+    margin-bottom: 30px;
+    
 }
-.logo {
+.inspiration-list:not(:) {
+
+}
+.footer-logo {
+    font-family: Raleway, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 1.19;
+/* identical to box height */
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+.footer-logo {
     display: block;
     margin-bottom: 20px;
 }
