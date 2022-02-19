@@ -492,9 +492,15 @@ margin-right: 30px;
 .inspiration-list {
     margin-bottom: 30px;
     background: #FFFFFF;
+<<<<<<< HEAD
 border-bottom: 1px solid #EEEEEE;
 border-top: none;
+=======
+
+>>>>>>> 12a74e3cf236b98f93af0a8c22ebc743f234f744
 box-sizing: border-box;
+border-top: none;
+border-bottom:1px solid #EEEEEE;
 }
 .inspiration-list:not(:nth-child(n+7)) {
 
