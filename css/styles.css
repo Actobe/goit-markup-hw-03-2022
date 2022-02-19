@@ -428,22 +428,20 @@ background-color: #2196F3
 
 .main-portfolio {
    padding-top: 94px;
-   padding-bottom: 50px;
+   padding-bottom: 94px;
 }
-.menu-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
+
 .portfolio {
     display: flex;
     align-items: center;
     margin-bottom: 56px;
+    justify-content: center;
+    
 }
 .portfolio-list {
 display: flex;
 align-items: center;
+
 }
 .portfolio-list:not(:last-child) {
     margin-right: 8px;
@@ -474,13 +472,14 @@ color: #757575;
 .inspiration {
     display: flex;
     flex-wrap: wrap;
+    
 }
 .inspiration-list:not(:nth-child(3n)) {
 margin-right: 30px;
 }
 .main-inspiration {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 24px;
     
 }
@@ -488,16 +487,18 @@ margin-right: 30px;
     flex-basis: calc((100%-120px)/3); 
 }
 .nomenclature {
-    margin-bottom: 4px;
     margin-top: 20px;
 }
 .inspiration-list {
     margin-bottom: 30px;
     background: #FFFFFF;
-border: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+border-top: none;
 box-sizing: border-box;
 }
+.inspiration-list:not(:nth-child(n+7)) {
 
+}
 .footer-logo {
     font-family: Raleway, sans-serif;
 font-style: normal;
