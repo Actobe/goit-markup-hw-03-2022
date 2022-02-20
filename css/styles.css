@@ -486,9 +486,7 @@ margin-right: 30px;
 .inspiration {
     flex-basis: calc((100%-120px)/3); 
 }
-.nomenclature {
-    margin-top: 20px;
-}
+
 .inspiration-list {
     margin-bottom: 30px;
     background: #FFFFFF;
