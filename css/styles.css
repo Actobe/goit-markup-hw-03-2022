@@ -248,21 +248,11 @@ color: #212121;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-<<<<<<< HEAD
-
-=======
-.employees {
-    display: flex;
-    
-    
-}
->>>>>>> 5c86442a593ead4a8f718398a6794ef28ba5bdf4
-.employees-section {
+.employees-section section {
     background-color:#F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
-    display: flex;
-    
+    display: flex;  
 }
 
 .employees-list { 
@@ -410,16 +400,11 @@ line-height: 1.63;
 letter-spacing: 0.03em;
 cursor:pointer;
 
-border-radius: 4px;
     display: flex;
     align-items: center;
     padding: 6px 22px;
 }
-.portfolio-list:hover,
-.portfolio-list:focus {
-color: #FFFFFF;
-background-color: #2196F3
-}
+
 .portfolio-list-button:hover,
 .portfolio-list-button:focus {
     color: #FFFFFF;
@@ -429,6 +414,7 @@ background-color: #2196F3
 .main-portfolio {
    padding-top: 94px;
    padding-bottom: 94px;
+   
 }
 
 .portfolio {
@@ -441,6 +427,7 @@ background-color: #2196F3
 .portfolio-list {
 display: flex;
 align-items: center;
+
 
 }
 .portfolio-list:not(:last-child) {
@@ -496,7 +483,6 @@ margin-right: 30px;
     box-sizing: border-box;
 }
 .inspiration-list:not(:nth-child(n+7)) {
-
 }
 .footer-logo {
     font-family: Raleway, sans-serif;
